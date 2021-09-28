@@ -27,9 +27,45 @@ function validaCPF(cpf) {
 }
 
 function validacao() {
-  var cpf = document.getElementById("cpf").value;
+  let cpf = document.getElementById("cpf").value;
   var resultadoValidacao = validaCPF(cpf);
   if (!resultadoValidacao) {
     alert("CPF invalido");
+  }
+}
+
+function validaCampoVazio(idcampo) {
+  let campo = document.getElementById(idcampo).value;
+  if (campo == "" || campo == null) {
+    alert("Entre com o  " + retornaNomeCampo(idcampo) + "!");
+  }
+}
+
+function validarFormulario() {
+  validaCampoVazio("name");
+  validacao();
+  validaCampoVazio("celular");
+}
+
+function retornaNomeCampo(idcampo) {
+  switch (idcampo) {
+    case "name":
+      return "Nome";
+
+      break;
+
+    case "celular":
+      return "Celular";
+      break;
+    case "ender":
+      return "Endereco";
+      break;
+
+      case "num":
+      return "numero";
+      break;
+
+    default:
+      break;
   }
 }

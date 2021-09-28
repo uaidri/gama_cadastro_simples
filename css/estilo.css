@@ -58,17 +58,27 @@ h1{
     color: blue;
     margin-bottom: 1px;
     margin-bottom: 2vw;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 4vw;
     margin-right: 20vw;
     padding-left: 5vw;
-    font-size: 2vw;
+    font-size: 1.3vw;
     width: 85%;
-    height: 5vw;   
+    height: 3vw; 
+    padding: 1vw;  
    
 }
- .botao{
-     display: block;
+ #botao{
+     display: flex;
+     margin-left: 42%;
+    
+ }
+
+ #button{
+     color: white;
+     background-color: blue;
+     width: 7vw;
+     
  }
 
     

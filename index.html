@@ -51,23 +51,23 @@
                 </div>
                 <div class="alinhar">
                     <div>
-                        <label for="lfone">Endereco:</label><br>
-                        <input type="text" id="fone" name="fone" maxlength="70" required><br>
+                        <label for="lender">Endereco:</label><br>
+                        <input type="text" id="ender" name="ender" maxlength="70" required><br>
                     </div>
                     <div>
-                        <label for="">numero:</label><br>
-                        <input type="text" id="celular" name="celular" required>
+                        <label for="lnum">numero:</label><br>
+                        <input type="text" id="num" name="num" required>
                     </div>
 
                 </div>
                 <div class="alinhar">
                     <div>
-                        <label for="lfone">Bairro:</label><br>
-                        <input type="text" id="fone" name="fone" maxlength="70"><br>
+                        <label for="lbairro">Bairro:</label><br>
+                        <input type="text" id="bairro" name="bairro" maxlength="70"><br>
                     </div>
                     <div class="criaborda">
-                        <label for="lfone">Cep:</label><br>
-                        <input type="text" id="fone" name="fone" maxlength="70"><br>
+                        <label for="lcep">Cep:</label><br>
+                        <input type="text" id="cep" name="cep" maxlength="10"><br>
                     </div>
 
                 </div>
@@ -75,23 +75,27 @@
                 <div class="alinhar">
 
                     <div>
-                        <label for="">Cidade:</label><br>
-                        <input type="text" id="celular" name="celular">
+                        <label for="lcidade">Cidade:</label><br>
+                        <input type="text" id="cidade" name="cidade">
                     </div>
                     <div>
-                        <label for="">Estado:</label><br>
-                        <input type="text" id="celular" name="celular">
+                        <label for="lestado">Estado:</label><br>
+                        <input type="text" id="estado" name="estado">
                     </div>
                 </div>
 
                 
         </div>
-        <input type="button" value="Enviar" onclick="validarFormulario()" />
+        
+        <div id="botao">
+            <input  type="button" value="Enviar" onclick="validarFormulario()" id="button" />
+        </div>
+        
     </div>
-    <footer id="rodape"></footer>
+    <footer id="rodape">Cadastro pessoal</footer>
 
 
 
 </body>
-
+<script src="./javascript/script.js"></script>
 </html>
